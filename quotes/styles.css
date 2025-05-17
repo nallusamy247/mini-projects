@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; 
+}
+body{
+    background: #000000;
+}
+.quote-picker{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px 2px   hwb(0 95% 2%); 
+}
+.quote-picker h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-picker h2::after{
+    content:'';
+    width:74px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(23,124,229); 
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+    transform: : translateX(-50%) ;
+
+}
+
+.quote-picker blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quote-picker blockquote::before, .quote-picker blockquote::after{
+    content: '"';
+}
+
+.quote-picker span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+
+}
+.quote-picker span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background:  rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-picker div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-button button{
+    font-size: 18px;
+    background: rgb(23, 124, 229);
+    color: hsl(0, 41%, 95%);
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.quote-button button img{
+    width: 20px;
+    margin-right: 10px;
+
+}
+.quote-button button:nth-child(2){
+    background: transparent;
+    background-color: black ;
+}
