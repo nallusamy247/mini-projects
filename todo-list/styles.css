@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: 
+    linear-gradient(135deg,#25fefe,#25fe49);
+    padding: 10px;
+}
+.to-doweb{
+    width: 100%;
+    max-width: 540px;
+    background: #090410;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 25px;
+}
+.to-doweb h2{
+    color: #d6d0de;
+    display: flex;
+    align-items: center;
+    border-bottom: 20px;
+}
+.to-doweb h2 img{
+    margin-left: 10px;
+    width: 30px;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1ecf7;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+}
+#textinput{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weigth: 14px;
+
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #128a87;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+
+    list-style:none;
+
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    color: #fff;
+    
+
+}
+ul li.checked{
+    color: rgb(235, 25, 25);
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+
+    background-image: url(images/checked.png);
+    
+
+
+}
+ul li span{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: rgb(235, 25, 25);
+}
+{83738665896577}
